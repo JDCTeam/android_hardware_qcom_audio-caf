@@ -27,6 +27,7 @@ libOmxAmrEnc-inc       += $(TARGET_OUT_HEADERS)/mm-core/omxcore
 LOCAL_MODULE            := libOmxAmrEnc
 LOCAL_MODULE_TAGS       := optional
 LOCAL_CFLAGS            := $(libOmxAmrEnc-def)
+LOCAL_CFLAGS += -Wno-format -Wno-null-conversion -Wno-parentheses-equality -Wno-format-extra-args -Wno-reorder -Wno-macro-redefined -Wno-switch
 LOCAL_C_INCLUDES        := $(libOmxAmrEnc-inc)
 LOCAL_PRELINK_MODULE    := false
 LOCAL_SHARED_LIBRARIES  := libutils liblog

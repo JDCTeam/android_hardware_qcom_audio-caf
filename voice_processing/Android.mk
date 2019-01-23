@@ -21,6 +21,6 @@ LOCAL_SHARED_LIBRARIES := \
 
 LOCAL_SHARED_LIBRARIES += libdl
 
-LOCAL_CFLAGS += -fvisibility=hidden
+LOCAL_CFLAGS += -fvisibility=hidden -Wno-unused-variable -Wno-gnu-designator -Wno-unused-function
 
 include $(BUILD_SHARED_LIBRARY)

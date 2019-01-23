@@ -187,6 +187,7 @@ ifeq ($(strip $(AUDIO_FEATURE_ENABLED_HWDEP_CAL)),true)
     LOCAL_CFLAGS += -DHWDEP_CAL_ENABLED
 endif
 
+LOCAL_CFLAGS += -Wno-unused-variable -Wno-unused-label -Wno-unused-function
 LOCAL_COPY_HEADERS_TO   := mm-audio
 LOCAL_COPY_HEADERS      := audio_extn/audio_defs.h
 

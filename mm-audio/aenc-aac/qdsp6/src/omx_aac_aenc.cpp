@@ -2954,8 +2954,7 @@ OMX_ERRORTYPE  omx_aac_aenc::set_parameter(OMX_IN OMX_HANDLETYPE     hComp,
 				bufferSupplierType->eBufferSupplier;
                 } else
                 {
-                    DEBUG_PRINT_ERROR("set_param:IndexParamCompBufferSup \ 
-					%08x\n", eRet);
+                    DEBUG_PRINT_ERROR("set_param:IndexParamCompBufferSup %08x\n", eRet);
                     eRet = OMX_ErrorBadPortIndex;
                 }
 

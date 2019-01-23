@@ -27,6 +27,8 @@ libOmxQcelp13Enc-inc       += $(TARGET_OUT_HEADERS)/mm-core/omxcore
 LOCAL_MODULE            := libOmxQcelp13Enc
 LOCAL_MODULE_TAGS       := optional
 LOCAL_CFLAGS            := $(libOmxQcelp13Enc-def)
+LOCAL_CFLAGS += -Wno-format -Wno-null-conversion -Wno-parentheses-equality -Wno-format-extra-args -Wno-reorder -Wno-macro-redefined -Wno-switch
+
 LOCAL_C_INCLUDES        := $(libOmxQcelp13Enc-inc)
 LOCAL_PRELINK_MODULE    := false
 LOCAL_SHARED_LIBRARIES  := libutils liblog
@@ -61,6 +63,7 @@ LOCAL_SHARED_LIBRARIES  := libmm-omxcore
 LOCAL_SHARED_LIBRARIES  += libOmxQcelp13Enc
 LOCAL_SHARED_LIBRARIES  += libaudioalsa
 LOCAL_SRC_FILES         := test/omx_qcelp13_enc_test.c
+LOCAL_C_FLAGS += -Wno-format -Wno-null-conversion -Wno-parentheses-equality -Wno-format-extra-args -Wno-reorder -Wno-macro-redefined
 
 include $(BUILD_EXECUTABLE)
 

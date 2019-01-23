@@ -27,6 +27,8 @@ libOmxEvrcEnc-inc       += $(TARGET_OUT_HEADERS)/mm-core/omxcore
 LOCAL_MODULE            := libOmxEvrcEnc
 LOCAL_MODULE_TAGS       := optional
 LOCAL_CFLAGS            := $(libOmxEvrcEnc-def)
+LOCAL_CFLAGS += -Wno-format -Wno-null-conversion -Wno-parentheses-equality -Wno-format-extra-args -Wno-reorder -Wno-macro-redefined -Wno-switch
+
 LOCAL_C_INCLUDES        := $(libOmxEvrcEnc-inc)
 LOCAL_PRELINK_MODULE    := false
 LOCAL_SHARED_LIBRARIES  := libutils liblog

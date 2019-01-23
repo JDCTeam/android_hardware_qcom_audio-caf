@@ -40,6 +40,7 @@ ifeq ($(strip $(AUDIO_FEATURE_ENABLED_FM_POWER_OPT)),true)
 LOCAL_CFLAGS += -DFM_POWER_OPT
 endif
 
+LOCAL_CFLAGS += -Wno-overloaded-virtual -Wno-unused-private-field
 LOCAL_MODULE := libaudiopolicymanager
 
 include $(BUILD_SHARED_LIBRARY)
